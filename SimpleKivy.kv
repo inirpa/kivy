@@ -1,0 +1,28 @@
+#File name : Simple.py
+#:kivy 1.8.0
+
+<Label>
+    text : "Hello "+" world"
+<Button>
+	font_size : 40
+	color:	0, 1, 0, 1
+	size: 100, 75
+	size_hint: 0.3, 0.2
+
+<Widgets>:
+	Button:
+		pos: 10, 0
+		text: "Kivy"
+		
+	Button:
+		pos: root.x, root.top - self.height
+		text: "Tuts"
+
+<FloatLayout>:
+	Button:
+		text: "Kivy"
+		pos_hint: {"x":0, "y":0.5 }
+
+	Button:	
+		text: "ok"
+		pos_hint: {"right":1, "top":0.5 }
